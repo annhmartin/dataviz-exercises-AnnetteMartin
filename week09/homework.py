@@ -11,18 +11,18 @@ import pandas as pd
 # In[2]:
 
 
-df = pd.read_csv('../data/world_happiness_2023.csv')
+df = pd.read_csv('data/world_happiness_2023.csv')
 
 df.head()
 
 
-# In[3]:
+# In[ ]:
 
 
 print(dir(st))
 
 
-# In[4]:
+# In[ ]:
 
 
 # ── STEP 1: Minimal working app ──────────────────────────────────────────
@@ -30,7 +30,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv('../data/world_happiness_2023.csv')
+df = pd.read_csv('data/world_happiness_2023.csv')
 df.columns = ['Country','Region','Score','GDP','Social_Support',
               'Life_Expectancy','Freedom','Generosity','Corruption']
 
@@ -38,7 +38,7 @@ st.title("World Happiness Dashboard")
 st.write(f"Data loaded: {len(df)} countries")
 
 
-# In[5]:
+# In[ ]:
 
 
 # ── STEP 2: Add a chart + apply appropriate colour rule ───────────────────────────
@@ -70,7 +70,7 @@ fig.show()
 st.plotly_chart(fig, width='stretch')  # always use this
 
 
-# In[6]:
+# In[ ]:
 
 
 # ── STEP 3: Sidebar filter + reactive chart ──────────────────────────────
@@ -108,7 +108,7 @@ fig.update_traces(marker_line_width=0)
 st.plotly_chart(fig, width='stretch')
 
 
-# In[7]:
+# In[ ]:
 
 
 # ── STEP 4: Full dashboard — KPIs + columns layout + BBD colour ──────────
@@ -176,7 +176,7 @@ st.caption("Built with Streamlit + Plotly")
 # ---
 # ## Class Exercise 💪 💻
 
-# In[10]:
+# In[ ]:
 
 
 st.divider()
