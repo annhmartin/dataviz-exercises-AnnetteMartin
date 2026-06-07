@@ -10,7 +10,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv('../data/world_happiness_2023.csv')
+df = pd.read_csv('data/world_happiness_2023.csv')
 df.columns = ['Country','Region','Score','GDP','Social_Support',
               'Life_Expectancy','Freedom','Generosity','Corruption']
 
