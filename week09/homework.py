@@ -46,7 +46,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv('../data/world_happiness_2023.csv')
+df = pd.read_csv('data/world_happiness_2023.csv')
 df.columns = ['Country','Region','Score','GDP','Social_Support',
               'Life_Expectancy','Freedom','Generosity','Corruption']
 
@@ -78,7 +78,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv('../data/world_happiness_2023.csv')
+df = pd.read_csv('data/world_happiness_2023.csv')
 df.columns = ['Country','Region','Score','GDP','Social_Support',
               'Life_Expectancy','Freedom','Generosity','Corruption']
 
@@ -118,7 +118,7 @@ import plotly.express as px
 
 st.set_page_config(page_title="World Happiness", page_icon="🌍", layout="wide")
 
-df = pd.read_csv('../data/world_happiness_2023.csv')
+df = pd.read_csv('data/world_happiness_2023.csv')
 df.columns = ['Country','Region','Score','GDP','Social_Support',
               'Life_Expectancy','Freedom','Generosity','Corruption']
 
